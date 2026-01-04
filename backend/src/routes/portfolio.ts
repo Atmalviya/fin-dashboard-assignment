@@ -1,11 +1,11 @@
-import express from 'express';
+import express, { Router } from 'express';
 import { buildPortfolio } from '../services/portfolioService';
 import { getStockQuote, getHistoricalData } from '../services/financeService';
 import { samplePortfolio } from '../data/samplePortfolio';
 import { ApiResponse, Portfolio, StockQuote } from '../types/portfolio';
 import { webSocketService } from '../services/websocketService';
 
-const router = express.Router();
+const router: Router = express.Router();
 
 
 router.get('/', async (req, res) => {

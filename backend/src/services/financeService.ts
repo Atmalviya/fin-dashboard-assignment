@@ -98,7 +98,7 @@ export async function getLatestEarnings(symbol: string, exchange: string): Promi
 }
 
 export interface CandlestickData {
-  time: number; // Unix timestamp
+  time: number;
   open: number;
   high: number;
   low: number;
